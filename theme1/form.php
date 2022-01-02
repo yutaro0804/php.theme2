@@ -9,7 +9,7 @@
 <body>
   <div class="form">
     <h2>入力フォーム</h2>
-    <form method="post"  action="display.php">
+    <form method="get"  action="display.php">
       <textarea name="form"></textarea>
       <input type="submit" value="送信">
     </form>  

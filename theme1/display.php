@@ -10,7 +10,7 @@
 <body>
   <div class="form">
     <h2>出力</h2>
-    <?php echo  $_POST ['form']?>
+    <?php echo  $_GET ['form']?>
   </div>
 </body>
 </html>
