@@ -8,12 +8,13 @@
 </head>
 <body>
   <div class="form">
-    <h2>入力フォーム</h2>
-    <form method="get"  action="calculate.php">
-      <input type = "text" name="number1">
-      <input type = "text" name="number2">
-      <input type="submit" value="送信">
-    </form>  
+    <h2>足し算の結果</h2>
+    <?php if (is_numeric($_GET['number1']) && is_numeric($_GET['number2'])): ?>
+      <?php $totalNum = $_GET['number1'] + $_GET['number2'] ?>
+      <p><?php echo $totalNum ?></p>
+    <?php else: ?>
+      <p>半角数字で入力してください</p>  
+    <?php endif ?>
   </div>
 </body>
 </html>
